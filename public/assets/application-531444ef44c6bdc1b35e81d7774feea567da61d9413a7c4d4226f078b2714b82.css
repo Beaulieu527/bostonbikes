@@ -1,0 +1,87 @@
+/* line 4, /Users/justinbeaulieu/bikeshop/app/assets/stylesheets/static_pages.scss */
+* {
+  box-sizing: border-box;
+}
+
+/****** body ******/
+/* line 8, /Users/justinbeaulieu/bikeshop/app/assets/stylesheets/static_pages.scss */
+body {
+  background-color: #4F5B66;
+}
+
+/* line 11, /Users/justinbeaulieu/bikeshop/app/assets/stylesheets/static_pages.scss */
+h1 {
+  text-transform: uppercase;
+}
+
+/* line 14, /Users/justinbeaulieu/bikeshop/app/assets/stylesheets/static_pages.scss */
+h1,
+h2 {
+  text-align: center;
+  color: #c0c5ce;
+  font-family: Tillana, Helvetica, Arial, sans-serif;
+}
+
+/* line 21, /Users/justinbeaulieu/bikeshop/app/assets/stylesheets/static_pages.scss */
+p {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+/** index**/
+/* line 27, /Users/justinbeaulieu/bikeshop/app/assets/stylesheets/static_pages.scss */
+.body {
+  margin: auto;
+  position: relative;
+}
+
+/* line 31, /Users/justinbeaulieu/bikeshop/app/assets/stylesheets/static_pages.scss */
+.my-image {
+  margin: 0 auto;
+  width: 25em;
+}
+
+/** navbar **/
+/* line 36, /Users/justinbeaulieu/bikeshop/app/assets/stylesheets/static_pages.scss */
+.navbar-brand {
+  text-transform: uppercase;
+  text-shadow: 20%;
+  font-weight: 800;
+  color: black;
+}
+
+/** Footer **/
+/* line 43, /Users/justinbeaulieu/bikeshop/app/assets/stylesheets/static_pages.scss */
+.navbar-footer {
+  background-color: #343d46;
+  text-align: center;
+  color: white;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* line 50, /Users/justinbeaulieu/bikeshop/app/assets/stylesheets/static_pages.scss */
+.copyright {
+  padding-top: 15px;
+  font-weight: 500;
+}
+h1.{
+	text-transform: uppercase;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
