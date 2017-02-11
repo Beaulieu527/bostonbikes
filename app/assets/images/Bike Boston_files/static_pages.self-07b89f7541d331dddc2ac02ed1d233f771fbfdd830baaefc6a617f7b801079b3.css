@@ -1,0 +1,49 @@
+/* line 4, /Users/justinbeaulieu/bikeshop/app/assets/stylesheets/static_pages.scss */
+* {
+  box-sizing: border-box;
+}
+
+/****** body ******/
+/* line 8, /Users/justinbeaulieu/bikeshop/app/assets/stylesheets/static_pages.scss */
+body {
+  background-color: #4F5B66;
+  height: 100%;
+}
+
+/* line 12, /Users/justinbeaulieu/bikeshop/app/assets/stylesheets/static_pages.scss */
+h1 {
+  text-transform: uppercase;
+}
+
+/* line 15, /Users/justinbeaulieu/bikeshop/app/assets/stylesheets/static_pages.scss */
+h1,
+h2 {
+  text-align: center;
+  color: #c0c5ce;
+  font-family: Tillana, Helvetica, Arial, sans-serif;
+}
+
+/* line 22, /Users/justinbeaulieu/bikeshop/app/assets/stylesheets/static_pages.scss */
+p {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+/** navbar **/
+/* line 28, /Users/justinbeaulieu/bikeshop/app/assets/stylesheets/static_pages.scss */
+.navbar-brand {
+  text-transform: uppercase;
+  text-shadow: 20%;
+  font-weight: 800;
+  color: black;
+}
+
+/** Footer **/
+/* line 35, /Users/justinbeaulieu/bikeshop/app/assets/stylesheets/static_pages.scss */
+#footer {
+  background-color: #343d46;
+  height: 25px;
+  float: right;
+  color: white;
+}
