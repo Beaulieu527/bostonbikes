@@ -3,3 +3,4 @@ class AddPriceToProducts < ActiveRecord::Migration[5.0]
     add_column :products, :price, :string
   end
 end
+
