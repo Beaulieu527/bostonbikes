@@ -18,8 +18,8 @@ ActiveRecord::Schema.define(version: 20170220055517) do
     t.string   "image_url"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
-    t.string   "color"
-    t.string   "price"
+    t.string   "colour"
+    t.integer  "price"
   end
 
 end
