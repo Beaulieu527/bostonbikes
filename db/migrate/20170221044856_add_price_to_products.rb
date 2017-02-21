@@ -1,4 +1,4 @@
-class AddPriceToProducts < ActiveRecord::Migration
+class AddPriceToProducts < ActiveRecord::Migration[5.0]
   def change
     add_column :products, :price, :integer
   end
