@@ -1,7 +1,10 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Products</h1>
-
+  <div class="container-fluid" id="new"></div>
+    <span class="btn btn-default" role="button">        <%= link_to 'New Product', new_product_path %>
+    </span>
+  </div>
 <div class="container-fluid">
   <div class="row">
     <% @products.each do |product| %>
@@ -20,10 +23,5 @@
         </span>
       </div><!-- /col -->
     <% end %>
-    <div class="container-fluid" id="new"></div>
-      <span class="btn btn-default" role="button">
-        <%= link_to 'New Product', new_product_path %>
-      </span>
-    </div>
   </div>
 </div>
