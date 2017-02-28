@@ -1,6 +1,11 @@
 // Place all the styles related to the products controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-#new{
-	padding-top: 20px;
+.new{
+	padding-bottom: 20px;
+	float:right;
+}
+
+.container-fluid{
+	padding-bottom: 1%;
 }

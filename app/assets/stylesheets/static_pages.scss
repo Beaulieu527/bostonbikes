@@ -45,14 +45,12 @@ p{
 	margin-bottom: 100px;
 }
 /** Footer **/
-.navbar-footer{
+.copyright{
+	width:100%;
+	font-weight: 500;
 	background-color:#343d46;
-	text-align: center;
+	text-align: right;
 	color: white;
   	padding-left: 15px;
-  	padding-right: 15px;
-}
-.copyright{
-	padding-top: 15px;
-	font-weight: 500;
+  	padding-right: 15px;	
 }
