@@ -9,7 +9,7 @@ class ProductsController < ApplicationController
         if (Rails.env == "production")
           @products = Product.where("name LIKE ?","%#{search_term}%")
         else   
-           @products = Product.where("name Ilike ?","%#{search_term}%")
+           @products = Product.where("name ilike ?","%#{search_term}%")
         # return our filtered list is here
       else
          @products = Product.all
