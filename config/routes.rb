@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  ddevise_for :users, :path => '', :path_names => {:sign_in => 'login', :sign_out => 'logout'}
+  resources :users
   resources :products
   get 'static_pages/about'
   get 'static_pages/contact'

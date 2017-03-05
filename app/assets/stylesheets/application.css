@@ -13,14 +13,127 @@
  *= require_tree .
  *= require_self
  */
+ /****************/
+/**** devise ****/
 
-/** Footer **/
-#copyright{
-	width:100%;
-	font-weight: 500;
-	background-color:#343d46;
-	text-align: right;
-	color: white;
-  	padding-left: 15px;
-  	padding-right: 15px;	
+.container-fluid {
+	padding: 0px;
+}
+
+.navbar-default {
+  background-color: black;
+  border-style: none;
+  border-radius: 0px;
+  margin-bottom: 0px;
+  width:100%;
+}
+
+.navbar-default .navbar-brand, .navbar-default .navbar-nav>li>a  {
+  color: #fff;
+  font: normal 700 20px/40px 'Lato', sans-serif;
+  font-family: Lato, Futura, 'Trebuchet MS', Arial, sans-serif;
+  letter-spacing: 3.6px;
+}
+
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover,
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+  color: #55db55;
+}
+
+.container-fluid .jumbotron{
+	border-radius: 0px;
+	height: 100vh;
+}
+
+h1, h2, h3, h4 {
+	color: #333;
+	font-family: "Playfair Display",serif;
+	display: block;
+}
+
+.navbar-form {
+	margin-top: 13px;
+}
+
+.btn {
+	border-radius: 0px;
+	padding-right: 10px;
+}
+
+.form-control {
+	border-radius: 0px;
+}
+
+.btn-default-transparent {
+  color: #fff;
+  background-color: transparent;
+  border-color: #fff;
+}
+
+/****************/
+/**** devise ****/
+/****************/
+
+.devise {
+  background-color: #EEEEEE;
+  height: 100vh;
+}
+
+.form-container-devise {
+  background-color: #404040;;
+  padding: 60px;
+  border-radius: 2px;
+}
+
+.form-container-devise input {
+  width: 100%;
+  border-color: white;
+  background-color:#55db55;
+  border-style: solid;
+  border-width: 1px;
+  padding: 5px;
+  color: #fff;
+}
+
+.form-container-devise label, 
+.form-container-devise em,
+.form-container-devise p {
+  display: inline-block;
+  color: #fff;
+}
+
+.form-container-devise i {
+  color: #fff;
+}
+
+.form-container-devise h2, 
+.form-container-devise h3 {
+  text-align: center;
+  margin-bottom: 1em;
+  margin-top: 0px;
+  color: #fff;
+}
+
+.form-container-devise h3 {
+  margin-top: 2em;
+  margin-bottom: 10px;
+}
+
+.form-container-devise span {
+  display: inline-block;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+}
+
+.form-container-devise .field {
+  margin-bottom: 15px;
+}
+
+.form-container-devise input.btn-form-devise {
+  background-color: #6dc066;
+  color: #fff;
+  padding: 1em;
+  border-style: dotted;
+  margin-top: 10px;
 }

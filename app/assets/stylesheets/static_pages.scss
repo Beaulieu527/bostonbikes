@@ -6,7 +6,7 @@
 }
 /****** body ******/
  body{
- 	background-color: #4F5B66;
+ 	background-color: #eeeeee;
  }
  h1{
  	text-transform: uppercase;
@@ -22,7 +22,6 @@ h2{
 }
 p{
 	text-align: center;
-	color: white;
 	font-size: 20px;
 }
 /** index**/
@@ -33,13 +32,7 @@ p{
 .my-image{
 	margin: 0 auto;
 }
-/** navbar **/
-.navbar-brand{
-	text-transform: uppercase;
-	text-shadow: 20%;
-	font-weight: 800;
-	color: black;
-}
+
 /** main area **/
 .main-area{
 	margin-bottom: 100px;
