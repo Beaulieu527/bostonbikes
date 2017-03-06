@@ -59,9 +59,16 @@
   </div><!-- /.container-fluid -->
 </nav>
  <!-- devise gem -->
- <p class="notice"><%= notice %></p>
- <p class="alert"><%= alert %></p>
-
+ <% if notice %>
+    <div class="alert alert-info" role="alert">
+      <p id="notice" class="alert alert-info"><%= notice %></p>
+    </div>
+    <% end %>
+    <% if alert %>
+    <div class="alert alert-danger" role="alert">
+      <p id="alert" class="alert alert-info"><%= alert %></p>
+    </div>
+    <% end %>
   <div class="main-area">
     <%= yield %>
   </div> 

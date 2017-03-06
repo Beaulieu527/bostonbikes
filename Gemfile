@@ -59,3 +59,6 @@ group :production do
 end
 
 gem 'devise'
+#use for authorization
+gem 'cancancan', '~> 1.10'
+

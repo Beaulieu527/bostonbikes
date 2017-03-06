@@ -13,8 +13,7 @@
  *= require_tree .
  *= require_self
  */
- /****************/
-/**** devise ****/
+ /**** general ****/
 
 .container-fluid {
 	padding: 0px;
@@ -70,9 +69,8 @@ h1, h2, h3, h4 {
   border-color: #fff;
 }
 
-/****************/
+
 /**** devise ****/
-/****************/
 
 .devise {
   background-color: #EEEEEE;
