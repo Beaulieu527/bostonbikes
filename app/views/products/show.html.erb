@@ -1,30 +1,33 @@
+<div class="coantiner-fluid" id="show"></div>
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @product.name %>
-</p>
+<div class="col-md-4 col-xs-12">
 
-<p>
-  <strong>Description:</strong>
-  <%= @product.description %>
-</p>
+  <div>
+    <%= image_tag(@product.image_url, class: "thumbnail img-responsive") %>
+  </div>
 
-<p>
-  <strong>Image url:</strong>
-  <%= @product.image_url %>
-</p>
+  <%= link_to 'Edit', edit_product_path(@product) %> |
+  <%= link_to 'Back', products_path %>
 
-<p>
-  <strong>Colour:</strong>
-  <%= @product.colour %>
-</p>
+</div>
 
-<p>
-  <strong>Price:</strong>
-  <%= @product.price %>
-</p>
+<div class="product_show col-md-8 col-xs-12">
+  <p>
 
+    <h2><%= @product.name %></h2>
+  </p>
 
-<%= link_to 'Edit', edit_product_path(@product) %> |
-<%= link_to 'Back', products_path %>
+  <p>
+    <%= @product.description %>
+  </p>
+
+  <p>
+    <span class="glyphicon glyphicon-usd"></span>
+    <%= @product.price %>
+  </p>
+
+  <p>Highest Rating:<%= @product.highest_rating_comment %></p>
+  <p>Lowest Rating:<%= @product.lowest_rating_comment %></p>
+
+</div>
