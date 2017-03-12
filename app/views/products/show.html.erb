@@ -14,7 +14,6 @@
 
 <div class="product_show col-md-8 col-xs-12">
   <p>
-
     <h2><%= @product.name %></h2>
   </p>
 
@@ -27,6 +26,7 @@
     <%= @product.price %>
   </p>
 
+  <p>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div> </p>
   <p>Highest Rating:<%= @product.highest_rating_comment %></p>
   <p>Lowest Rating:<%= @product.lowest_rating_comment %></p>
 

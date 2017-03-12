@@ -1,0 +1,17 @@
+<div>
+  <% if signed_in? %>
+    <h2 class= "fun-font">Add a review:</h2>
+    <%= form_for([@product, @product.comments.build], remote: true) do |f| %>
+      <div class="form-group">
+        <%= f.label :body, "Comments" %><br>
+        <%= f.text_area :body, class: 'form-control', placeholder: 'Enter comment here' %>
+      </div>
+      <div>
+        <div class="rating"></div>
+      </div>
+      <div>
+        <%= f.submit "Submit", class: 'btn btn-default' %>
+      </div>
+    <% end %>    
+  <% end %>
+</div>

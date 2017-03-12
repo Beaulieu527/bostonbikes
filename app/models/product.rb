@@ -8,7 +8,12 @@ class Product < ApplicationRecord
 	def highest_rating_comment
 		comments.rating_desc.first
 	end
+	
 	def lowest_rating_comment
 		comments.rating_desc.first
 	end	
+
+	def average_rating
+    	comments.average(:rating).to_f
+	end
 end
