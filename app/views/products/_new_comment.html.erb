@@ -1,6 +1,6 @@
 <div>
   <% if signed_in? %>
-    <h2 class= "fun-font">Add a review:</h2>
+    <h2>Add a review:</h2>
     <%= form_for([@product, @product.comments.build], remote: true) do |f| %>
       <div class="form-group">
         <%= f.label :body, "Comments" %><br>
