@@ -40,8 +40,6 @@
         <li><%= link_to "Products", products_path %></li>
         <li><%= link_to "Contact", '/static_pages/contact' %></li>
         <li><%= link_to "About", '/static_pages/about' %> </li>
-      </ul>
-      <ul class="nav pull_right">
         <li>
          <% if user_signed_in? %>
           <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
