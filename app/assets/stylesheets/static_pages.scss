@@ -24,6 +24,38 @@ p{
 	text-align: center;
 	font-size: 20px;
 }
+/** contact **/
+.contact{
+  width: 100%;
+  border-color: white;
+  border-style: solid;
+  border-width: 1px;
+  text-align: center;
+  margin-bottom: 1em;
+  margin-top: 0px;
+  color: #fff;
+  background-color: #404040;;
+  padding: 60px;
+  border-radius: 2px;
+}
+
+/** landing page **/
+.carousel {
+	margin: auto;
+}
+
+.carousel-caption h1 {
+	padding-bottom: 18%;
+	font-family: "Playfair Display",serif;
+	text-shadow: none;
+	font-size: 8em;
+	color: #fff;
+}
+
+.carousel-caption span {
+	display: block;
+	font-size: .3em;
+}
 /** index**/
 .body {
 	margin: auto;

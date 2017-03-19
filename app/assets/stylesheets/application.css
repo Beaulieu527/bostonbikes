@@ -15,6 +15,9 @@
  */
  /**** general ****/
 
+#home{
+  padding: 5px;
+}
 .container-fluid {
 	padding: 0px;
 }
