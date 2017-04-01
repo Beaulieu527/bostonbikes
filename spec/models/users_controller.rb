@@ -3,8 +3,8 @@ require 'rails_helper'
 describe UsersController, :type => :contoller do 
 
   before do
-    @user=User.create!(email: "justin@gmail.com", password: "123456")}
-    @user2=User.create!(email: "robert@gmail.com", password:"098765") 
+    @user = FactoryGirl.build(:user)
+    @user2 = FactoryGirl.build(:user)
   end
 
   describe 'GET#show' do
@@ -13,7 +13,7 @@ describe UsersController, :type => :contoller do
         sign_in user
       end  
       it "loads correct user details" do 
-        get :show, params: {id: @user.id}
+        get :show, params: {id: user.id}
 
         expect(response).to have_http_status(200)
         expect(assigns(:user)).to eq @user
@@ -28,7 +28,7 @@ describe UsersController, :type => :contoller do
 
     context 'Cannont access second users show page' do 
       it "redirects to root" do
-        get :show, params: {id: @user.id}
+        get :show, params: {id: user.id}
         redirect_to(root_path)
       end
     end    
