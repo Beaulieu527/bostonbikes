@@ -72,5 +72,9 @@ gem 'rails-controller-testing'
 
 #Gemfile for Stripe
 gem 'stripe'
+
 #Gemfile for Brakeman
 gem "brakeman", :require => false
+
+#Gemfile for Chosen
+gem 'chosen-rails'
