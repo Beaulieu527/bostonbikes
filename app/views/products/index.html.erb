@@ -1,7 +1,20 @@
+
 <p id="notice"><%= notice %></p>
 
-<h1>Products</h1>
-  <%= render @products %>
-  <div class="new">
-    <span class="btn btn-default" role="button"><%= link_to 'New Product', new_product_path %></span>
-   </div>
+  <div class="container-fluid product">
+        <div class="row">
+          <% @products.each do |product| %>
+          <div class="product-div col-xs-12 col-sm-6 col-md-6">
+            <%= image_tag(product.image_url, class: "img-responsive center-img") %>
+            <p style="text-transform: uppercase;"><strong><%= product.name %></strong></p>
+            <p> <span class="glyphicon glyphicon-usd"><%= product.price %></span>
+            <p><%= link_to 'Show', product %></p>
+            <p><%= link_to 'Edit', edit_product_path(product) %></p>
+          </div>
+          <% end %>
+        </div>
+  </div>
+
+<br>
+
+<%= link_to 'New Product', new_product_path %>
