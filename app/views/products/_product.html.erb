@@ -1,11 +1,15 @@
-<% cache product do %>
-  <div class="product-div col-sm-6 col-md-6">
-    <%= image_tag(product.image_url, class: "img-responsive center-img img-zoom", data_zoom_image: product.image_url) %>
-  </div>
-
-  <div class="product-desc col-md-6" data-product-id="<%= @product.id %>">
-    <h2><%= product.name %></h2>
-    <h3><%= product.description %></h3>
-    <p><strong><%= product.price %></strong></p>
-    <br>
-<% end %>
+-<div class="col-sm-2 col-md-4">		 +<% cache product do %>
+  <%= image_tag(product.image_url, class: "img-responsive") %>
+    <p><%= product.name %></p>		
+    <p><%= product.description %></p>	
+    <p><%= product.colour %></p>		
+    <p><strong>$<%= product.price %></strong></p>		 
+    <span class="btn btn-default" role="button">		 
+    <td><%= link_to 'Show', product %></td></span>		
+    <span class="btn btn-default" role="button">		 
+    <td><%= link_to 'Edit', edit_product_path(product) %></td></span>		
+    <span class="btn btn-default" role="button">
+    <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>		
+    </span>
+   <% end %> 		
+ </div><!-- /col -->
