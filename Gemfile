@@ -78,3 +78,6 @@ gem "brakeman", :require => false
 
 #Gemfile for Chosen
 gem 'chosen-rails'
+
+#Gemfile for Dalli
+gem 'dalli'

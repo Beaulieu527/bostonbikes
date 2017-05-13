@@ -1,7 +1,9 @@
 <p id="notice"><%= notice %></p>
 <div class="row">
   <h1>Products</h1>
-  <%= render @products %>
+  <% cache(cache_key_for_products) do %>
+    <%= render @products %>
+  <% end %>
   </div><!-- /row -->
   <br>
   <span class="btn-create"><%= link_to 'NEW PRODUCT', new_product_path %></span>
