@@ -96,4 +96,3 @@ config.cache_store = :dalli_store,
                      :socket_failure_delay => 0.2,
                      :down_retry_delay => 60
                     }
-end
