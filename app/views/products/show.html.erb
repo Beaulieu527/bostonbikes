@@ -19,9 +19,6 @@
 <% end %>
 <div class="alert alert-info" style="display:none" role="alert">A new comment has been posted!</div>
     <%= render 'comments' %>
-    <%= form_tag "/payments/create" do %>
-    <%= render partial: "shared/stripe_checkout_button" %>
-    <% end %>
 <div class="col-md-4 col-xs-12">
   <p>Average Rating:<%= @product.average_rating %></p>
   <p>Highest Rating:<% @product.highest_rating_comment %></p>

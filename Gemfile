@@ -81,3 +81,9 @@ gem 'chosen-rails'
 
 #Gemfile for Dalli
 gem 'dalli'
+
+#Gemfile for Redis
+gem 'redis-rails'
+
+#Gemfile for New Relic
+gem 'newrelic_rpm'
