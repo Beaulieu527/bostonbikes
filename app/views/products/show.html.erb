@@ -17,14 +17,19 @@
   <%= hidden_field_tag(:product_id, @product.id) %>
   <%= render partial: "shared/stripe_checkout_button" %>
 <% end %>
+<h6>  
+  Views:
+  <span class="badge">
+    <%= @product.views %>
+  </span>
+</h6>  
 <div class="alert alert-info" style="display:none" role="alert">A new comment has been posted!</div>
-    <%= render 'comments' %>
 <div class="col-md-4 col-xs-12">
   <p>Average Rating:<%= @product.average_rating %></p>
   <p>Highest Rating:<% @product.highest_rating_comment %></p>
   <p>Lowest Rating:<% @product.lowest_rating_comment %></p>
   <%= render "new_comment" %> 
-  <%= render "comments" %>
+  <%= render 'comments' %>
   <%= will_paginate @comments, :page_links => false %>
 </div>
 <% end %>
