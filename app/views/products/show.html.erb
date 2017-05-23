@@ -27,7 +27,8 @@
   <p>Average Rating:<%= @product.average_rating %></p>
   <p>Highest Rating:<% @product.highest_rating_comment %></p>
   <p>Lowest Rating:<% @product.lowest_rating_comment %></p>
-  <%= render "new_comment" %> 
+  <%= render "new_comment" %>
+  <%= render "comment" %> 
   <div class="alert alert-info" style="display:none" role="alert">A new comment was posted!</div>
   <%= render 'comments' %>
   <%= will_paginate @comments, :page_links => false %>
