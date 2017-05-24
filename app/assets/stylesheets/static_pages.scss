@@ -41,20 +41,23 @@ p{
 
 /** landing page **/
 .carousel {
-	margin: auto;
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-bottom: 30px;
 }
-
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-bottom: 1%;
+}
+.carousel-caption strong {
+  color: #fbae20;
+}
+.carousel-caption p {
+  font-size: 1.3em;
+}
 .carousel-caption h1 {
-	padding-bottom: 18%;
-	font-family: "Playfair Display",serif;
-	text-shadow: none;
-	font-size: 8em;
-	color: #fff;
-}
-
-.carousel-caption span {
-	display: block;
-	font-size: .3em;
+  font-size: 4em;
+  text-shadow: -1px -1px 15px rgba(0, 0, 0, 1);
 }
 /** index**/
 .body {
