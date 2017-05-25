@@ -7,7 +7,7 @@ class PaymentsController < ApplicationController
 
 		begin
 			charge = Stripe::Charge.create(
-				:ammount => (@product.price_in_cents), #amount in cents, again
+				:ammount => @product.price*100, #amount in cents, again
 				:currency => "usd",
 				:source => token,
 				:description => params[:stripeEmail]
@@ -23,6 +23,6 @@ class PaymentsController < ApplicationController
 			err = body[:error]
 			flash[:error] = "Unfortunately, there was an error processing your payment: #{err[:message]}"
 		end	
-		redirect_to_product_path(product)	
+		redirect_to product_path(product)	
 	end
 end
