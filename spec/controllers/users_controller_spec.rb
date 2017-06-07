@@ -10,7 +10,7 @@ describe UsersController, :type => :contoller do
   describe 'GET #show' do
     context 'User is logged in' do
       before do
-        sign_in user
+        sign_in @user1
       end  
       
       it "loads correct user details" do 
@@ -26,7 +26,7 @@ describe UsersController, :type => :contoller do
       end
     end
 
-     context 'no user is logged in' do
+     context 'No user is logged in' do
       it 'redirects to sign in' do
         get :show, params: { id: @user1.id }
         redirect_to(root_path)
