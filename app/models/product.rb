@@ -24,10 +24,10 @@ class Product < ApplicationRecord
   end
 
   def views
-    $redis.get("product:#{id}") # this is equivalent to 'GET product:1'
+ #   $redis.get("product:#{id}") # equv to GET product:1
   end
 
   def viewed!
-    $redis.incr("product:#{id}") # this is equivalent to 'INC product:1'
+    # $redis.incr("product:#{id}") # this is equivalent to 'INC product:1'
   end
 end

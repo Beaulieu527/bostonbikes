@@ -12,8 +12,4 @@ private
   def render_comment(comment, current_user)
     CommentsController.render(partial: 'comments/comment', locals: { comment: comment, current_user: current_user })
   end
-
- def render_page_entries(comments)
-    page_entries_info comments.paginate(page: 1, per_page: 5)
-  end
 end
